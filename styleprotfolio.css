@@ -1,0 +1,431 @@
+*{
+   box-sizing: border-box;
+   font-family: "Fira Sans", sans-serif;
+   font-weight: 400;
+   
+}
+.nav-logo img{
+    height: 130px;
+    width:205px;
+}
+.nav-heading{
+
+  font-size: 1.2rem;
+  text-align: center;
+}
+body{
+    margin: 0;
+}
+a{
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+[class*="col-"]{
+  float: left;
+  padding: 10px;
+}
+/*for mobile*/
+[class*="col-"]{
+   width: 100%;
+}
+
+.nav-bar{
+  background-color: #0c6168;
+  padding: 1% 7%;
+  text-align: center;
+}
+.nav-bar h1{
+  color: white;
+  margin: 0;
+  padding-top: 10px;
+  font-weight: 500;
+}
+.nav-menu{
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.nav-menu a{
+  background-color: #40868b;
+  border-radius: 10px;
+  margin: 7px 0px;
+  padding: 10px;
+}
+.nav-bar::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.nav-menu a:hover{
+  background-color: gray;
+}
+/*nav-bar desinging ends*/
+/* profile designing starts */
+.profile{
+  padding: 100px 10px;
+  position: relative;
+  text-align: center;
+}
+.profile img{
+ height: 110px;
+}
+#img1{
+ position: absolute;
+ right: 40px;
+ top: 10px;
+ transition: transform 2s;
+}
+#img1:hover{
+  transform: rotate(360deg);
+}
+.prof-desc h1{
+  text-align: center;
+  font-family:'Satisfy' , cursive;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.prof-desc p{
+ text-align: center;
+ font-size: 1.2rem;
+ color: gray;
+ width: 95%;
+ margin: 0 auto 20px auto;
+}
+#img2{
+   margin-top: 20px; 
+  position: absolute;
+  left: 40px;
+  bottom: 10px;
+  transition: transform 2s;
+ }
+ #img2:hover{
+   transform: rotate(360deg);
+ }
+ .profile::after{
+  content: '';
+  display: table;
+  clear: both;
+ }
+ .dotted-hr{
+  border: dotted 6px white;
+  border-bottom: none;
+  margin: 20px auto;
+  width: 70px;
+ }
+
+
+
+/* profile designing ends */
+
+/* about me starts here */
+
+.about-me-class{
+  background-color: #39a4ac;
+  padding: 1% 7%;
+  color: white;
+  text-align: center;
+  font-family: Montserrat;
+}
+.about-me-class::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.about-me-class h2{
+  text-align: center;
+  font-size: 2rem;
+ 
+}
+
+.about-me-img img{
+  height: 182px;
+  border-radius: 50%;
+  margin: 20px;
+  border: 5px solid white;
+}
+.about-me-img img:hover{
+  opacity: 0.6;
+}
+.about-me-desc{
+  margin-top: 15px;
+}
+.about-me-class p{
+  text-align: center;
+}
+.cv-button{
+  background-color: #052d2f;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+}
+.cv-button:hover{
+  opacity: 0.8;
+ }
+
+
+/* about me ends here */
+
+/* professional exeprience starts */
+.card{
+  width: 100%;
+  padding: 20px;
+ 
+}
+.card-icon{
+  text-align: center;
+}
+.card-icon img{
+  height: 82px;
+}
+.card-title h2{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Montserrat;
+  font-weight: 400;
+  background-color: #616161;
+  color: white;
+  padding: 10px;
+}
+.professional-exeprience{
+  padding: 1% 0%;
+}
+.professional-exeprience .card{
+  background-color: #a39e9e;
+  border-radius: 8px;
+  padding: 50px; 
+  height: 500px;
+}
+
+.professional-exeprience .card:hover{
+  box-shadow: 0px 4px 8px 5px black;
+}
+.rounded-img{
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 15px;
+}
+.professional-exeprience::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.rounded-img1{
+  height: 256px;
+  width: 78px;
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 15px;
+}
+.skills-container{
+  padding-right: 45px;
+  width: 367px;
+}
+.skills-container li{
+  list-style: none;
+  margin: 40px ;
+  margin-left: -35px;
+  font-weight: bold;
+  position: relative;
+}
+.skills-container li::before{
+  content: '';
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgb(89,89,153,.5);
+  border-radius: 1000px;
+}
+.skills-container li::after{
+  content: '';
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 0%;
+  height: 10px;
+  background-color: rgb(89,89,153,1);
+  border-radius: 1000px;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.skills-container li.html::after{
+  animation-name: html;
+}
+@keyframes html{
+  from{
+    width: 0;
+    background-color: navy;
+  }
+  to{
+    width: 85%;
+     background-color:   rgb(89,89,153,1); 
+   
+  }
+}
+.skills-container li.css::after{
+  animation-name: css;
+  
+}
+@keyframes css{
+  from{
+    width: 0;
+    background-color: navy;
+  }
+  to{
+    width: 60%;
+    background-color: rgb(89,89,153,1);
+  }
+}
+.skills-container li.BS::after{
+  animation-name: BS;
+  animation-duration: 4s;
+
+}
+@keyframes BS{
+  0%{
+    width: 0%;
+    background-color: navy;
+  }
+  50%{
+    width: 100%;
+    background-color: rgb(89,89,153,1);
+  }
+  100%{
+    width: 0%;
+    background-color: rgb(89,89,153,1);
+  }
+}
+.skills-container li.JS::after{
+  animation-name: JS;
+  animation-duration: 4s;
+
+}
+@keyframes JS{
+  0%{
+    width: 0%;
+    background-color: navy;
+  }
+  50%{
+    width: 100%;
+    background-color: rgb(89,89,153,1);
+  }
+  100%{
+    width: 0%;
+    background-color: rgb(89,89,153,1);
+  }
+}
+
+
+
+
+
+/* 
+professional exeprience ends */
+/* before footer starts  */
+.before-footer{
+  padding: 1% 7%;
+  background-color: #39a4ac;
+  color: white;
+  text-align: center;
+}
+.Contact{
+  padding: 1% 3%;
+}
+
+.Contact input,textarea{
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  resize: none;
+}
+.Contact button{
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  margin-left: 10px;
+  background-color: #052d2f;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+}
+.achievements{
+  text-align: center;
+}
+.media-buttons #button1{
+  color: #c4302b;
+}
+
+.achievements::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.iski-ma-ki-chut{
+  text-align: center;
+}
+.btn{
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 32px;
+  padding: 5px;
+  margin: 10px;
+  width: 50px;
+}
+.btn:hover{
+  background-color: gray;
+}
+#button2{
+  color: 	#1877F2;
+}
+.before-footer::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* before footer ends  */
+
+/* footer starts */
+.footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer-menu a{
+  display: block;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+.footer-menu a:hover{
+  color: gray;
+}
+.footer::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.footer-desc{
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+
+/* footer ends */

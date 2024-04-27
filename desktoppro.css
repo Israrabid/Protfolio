@@ -1,0 +1,131 @@
+/*For desktop*/
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+.nav-logo{
+    margin-top: -15px;
+    margin-left: -40px;
+    text-align: left;
+}
+.nav-heading h1{
+    text-align: right;
+    margin-top: 25px;
+}
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+   
+}
+.nav-menu a{
+    font-size: 20px;
+    padding: 20px;
+    background-color: #0c6168;
+    margin: 10px 0px;
+}
+/*nav-bar desinging ends for desktop*/
+
+/* profile designing starts for desktop*/
+   #img1{
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    width: 120px;
+    transition: width 2s,transform 2s;
+   }
+   #img1:hover{
+     width: 120px;
+   }
+   #img2{
+    position: absolute;
+    left: 100px;
+    bottom: 20px;
+    width: 120px;
+    transition: width 2s,transform 2s;
+   }
+   #img2:hover{
+     width: 120px;
+   }
+   .prof-desc p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+   }
+
+
+
+/* profile designing ends for desktop*/
+
+/* about me starts here */
+.about-me-img{
+  margin-top: 100px;
+}
+.about-me-img img{
+  height: 200px;
+  width: 200px;
+}
+.about-me-class p{
+  text-align: center;
+}
+/* about me ends here */
+/* professional exeprience starts */
+.card{
+  width: 350px;
+  margin-left: 40px;
+}
+
+/* 
+professional exeprience ends */
+
+/* before footer starts  */
+.iski-ma-ki-chut{
+  position: relative;
+}
+.media-buttons{
+  position: absolute;
+  margin-top: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+/* before footer ends  */
+
+
+/* footer starts */
+.footer-menu{
+  margin-top: 12px;
+}
+.footer-menu a{
+  display: inline;
+  margin: 10px;
+}
+
+
+
+/* footer ends */
+
+
+
+
+
+
+
+
